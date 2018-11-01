@@ -61,25 +61,32 @@ String uid;
                 });
 
 
- uid=FirebaseAuth.getInstance().getCurrentUser().getUid();
+
 
 try {
+    uid = FirebaseAuth.getInstance().getCurrentUser().getUid();
+}
+catch (Exception e) {
+}
 
-    ImageView tnsd_iv_qr = (ImageView) findViewById(R.id.imageView);
-
-
-    MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
     try {
+
+        ImageView tnsd_iv_qr = (ImageView) findViewById(R.id.imageView);
+
+
+        MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
         BitMatrix bitMatrix = multiFormatWriter.encode(uid, BarcodeFormat.QR_CODE, 200, 200);
         BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
         Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
         tnsd_iv_qr.setImageBitmap(bitmap);
     } catch (WriterException e) {
-        e.printStackTrace();
+        Toast.makeText(write.this, e.getMessage(),
+                Toast.LENGTH_SHORT).show();
+
     }
 
 
-}
+
 catch (Exception e)
 {
 

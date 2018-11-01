@@ -36,9 +36,9 @@ public class read extends AppCompatActivity {
                 Toast.makeText(this, "Unsucesful", Toast.LENGTH_LONG).show();
 
             } else {
-                Intent intent=new Intent(read.this,broadcast.class);
+                Intent intent=new Intent(read.this,BroadcastRead.class);
                 intent.putExtra("uid",intentResult.getContents());
-                Toast.makeText(this, intentResult.getContents(), Toast.LENGTH_LONG).show();
+
 
 startActivity(intent);
             }

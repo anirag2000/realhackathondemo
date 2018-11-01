@@ -32,8 +32,8 @@ public class broadcast extends AppCompatActivity {
         try {
             ed1 = (EditText) findViewById(R.id.editText);
             String message = ed1.getText().toString();
-            User user = new User(intentuid, message);
-            mDatabase.child("guidebroadcast").setValue(user);
+            User user = new User( message);
+            mDatabase.child("guidebroadcast").child(intentuid).setValue(user);
         }
         catch (Exception e)
         {
