@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "404537962027",
+    "firebase_url": "https://realhackathondemo.firebaseio.com",
+    "project_id": "realhackathondemo",
+    "storage_bucket": "realhackathondemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404537962027:android:32e1850d13959a58",
+        "android_client_info": {
+          "package_name": "com.example.anirudh.realhackathondemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404537962027-t3nndq0iiml1d9d4t38s56q3sle8qf88.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anirudh.realhackathondemo",
+            "certificate_hash": "f39fc89e333489fc549063230ab05b7d3a870295"
+          }
+        },
+        {
+          "client_id": "404537962027-iojkisqudqceet7uoa7dujn0aq0omvvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxtU1WawD2w7BVMw9u5zk3DZusSL_ZN6w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "404537962027-iojkisqudqceet7uoa7dujn0aq0omvvf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
