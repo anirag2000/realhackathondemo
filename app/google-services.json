@@ -23,6 +23,14 @@
           }
         },
         {
+          "client_id": "404537962027-b7svitepdgb5b12acfgnbhpnrkhce5kt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anirudh.realhackathondemo",
+            "certificate_hash": "ab85eabfa9715d94a74784197a5d041addcb033a"
+          }
+        },
+        {
           "client_id": "404537962027-iojkisqudqceet7uoa7dujn0aq0omvvf.apps.googleusercontent.com",
           "client_type": 3
         }

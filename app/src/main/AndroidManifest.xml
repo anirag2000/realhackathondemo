@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.anirudh.realhackathondemo">
 
     <application
@@ -16,8 +17,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".read" />
-        <activity android:name=".write"></activity>
+        <activity
+            android:name=".read"
+            android:screenOrientation="portrait"
+            android:stateNotNeeded="true"
+            tools:replace="screenOrientation" />
+        <activity android:name=".write" />
+        <activity android:name=".broadcast" />
+        <activity android:name=".BroadcastRead"></activity>
     </application>
 
 </manifest>
