@@ -71,6 +71,10 @@ catch (Exception e) {
 
     try {
 
+
+
+
+
         ImageView tnsd_iv_qr = (ImageView) findViewById(R.id.imageView);
 
 
@@ -78,6 +82,13 @@ catch (Exception e) {
         BitMatrix bitMatrix = multiFormatWriter.encode(uid, BarcodeFormat.QR_CODE, 200, 200);
         BarcodeEncoder barcodeEncoder = new BarcodeEncoder();
         Bitmap bitmap = barcodeEncoder.createBitmap(bitMatrix);
+
+        if (bitmap==null)
+        {
+            finish();
+            Intent intent=new Intent(write.this,write.class);
+            startActivity(intent);
+        }
         tnsd_iv_qr.setImageBitmap(bitmap);
     } catch (WriterException e) {
         Toast.makeText(write.this, e.getMessage(),
